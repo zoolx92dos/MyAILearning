@@ -33,6 +33,7 @@ def print_numbers_then_pairs(array):
 
 print_numbers_then_pairs(new_array)
 
+
 #Total time complexity of the print_numbers_then_pairs function =
 #O(1 + n + n*1 + 1 + n*n + n*n + n*n*1) = O(3n^2 + 2n + 2)
 #Now, Big-O presents scalability of the cod, i.e., how the code will behave as the inputs grow larger and larger
