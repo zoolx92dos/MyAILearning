@@ -15,8 +15,8 @@ def pairs(array1, array2):
 
 pairs(array1,array2)
 
+
 #Total time complexity of the pairs function =
 #O(n*m + m*n + m*n*1) = O(3*m*n)
 #The constants can be safely ignored.
 #Therefore, O(m * n * 3) = O(m * n)
-
