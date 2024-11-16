@@ -27,6 +27,7 @@ funchallenge(nemo)
 funchallenge(everyone)
 funchallenge(large)
 
+
 #Total running time of the funchallenge function =
 #O(1 + 1 + n + n*1 + n*1 + n*1 + 1) = O(3n +3) = O(3(n+1))
 #Any constant in the Big-O representation can be replaced by 1, as it doesn't really matter what constant it is.
