@@ -25,6 +25,7 @@ def find_nemo(array1, array2):
 
 find_nemo(large1, large2)
 
+
 #Total time complexity of the find_nemo function =
 #O(1 + m + m*1 + k1*1 + 1 + 1 + 1 + n + n*1 + k2*1 + 1 + 1) = O(6 + 2m + 2n + k1 + k2)
 #Now k1<=m and k2<=n. In the worst case, k1 can be m and k2 can be n. We'll consider the worst case and calculate the Big-O
