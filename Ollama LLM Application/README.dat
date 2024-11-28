@@ -1,0 +1,184 @@
+Ollama
+
+- Model Management
+- Unified Interface
+- Extensibility
+- Performance Optimization
+
+Use Cases
+
+- Development and Testing
+- Educaiton and Research
+- Secure Applications
+
+
+Topics Covered
+
+- LLM parameters deep dive
+- Model Benchmarks
+- Ollama Basic CLI Commands - Pull and Testing Models
+- Pull in the Llava Multimodal Model and Captioning an Image
+- Summarize and Sentiment Analysis and Customizing Models wiht the Modelfile
+- Ollama REST ApplicationsOllama REST API - Request JSON
+- Tasks with Ollama
+- Different ways to interact with Ollama ModelsOllama Model Running uder Msty App - Frontend Tool - RAG Hands-Optimization
+- Python library for building LLM Applications Locally
+- Interact with Llama3 in Python using Ollama REST API
+- Ollama Python Library Chatting with our model
+- Chat example with streaming
+- Using Ollama show function
+- Create a custom model in code
+- Build LLM App - Grocery List Organizer
+- Building RAG Systems with Ollama with langchain
+- Deepdive into Vectorstore and Embeddings
+- PDF RAG Systems
+- RAG System - Document Ingestion and Vector DB Creation and Embeddings
+- RAG System - Retreival and Querying
+- RAG System - Cleaner Code (Code Refactoring)
+- RAG System - Streamlit version
+- Application - AI recruiter agency and Building the AI recruiter agency
+
+Commands 
+
+ollama run llama3.2
+
+/help
+/show
+
+llama3.2 
+Text Summarization
+Personal Information Management
+Knowledge Retreival
+Rewriting tasks running locally on edge
+
+
+LLM Parameters
+
+Information about model - architecture, parameter, context length, embedding length, quamtization
+
+Parameter - The internal weights and biases that the model learns during training, they determine how the model processes input data and generate output
+
+Context Length - Referes to the max number of tokens the model can process in a single input. Ideal for processing entire books, lengthy articles, or extensive conversations
+
+Embedding Length - The size of the vector representation for each token in the input text. 3072 dimentsions in the embedding space, higher dimensional embeddings can 
+capture more nuanced meanings and relationships between words
+
+Quantization - A technique used to reduce the size of neural network model by reducing the precision of its weight. Indicates that the model's weight are quantized
+to 4 bits. Now we have a smaller model, and faster processing and lower memory usage. 
+
+# Creating a custom model with Modelfile
+ollama create james -f ./Modelfile 
+
+Ollama API using REST API
+
+APIs are hosted on localhost:11434 
+
+curl http://localhost:11434/api/generate -d '{
+    "model": "llama3.2",
+    "prompt": "Why is the sky blue?"
+}'
+
+
+curl http://localhost:11434/api/generate -d '{
+    "model": "llama3.2",
+    "prompt": "Tell me about Nvidia?",
+    "stream": false
+}'
+
+curl http://localhost:11434/api/chat -d '{
+    "model": "llama3.2",
+    "messages": [
+        {"role": "user", "content": "Tell me a fun fact about Lucknow"}
+    ],
+    "stream": false
+}'
+
+passing more specification in the endpoint
+
+curl http://localhost:11434/api/generate -d '{
+    "model": "llama3.2",
+    "prompt": "What color is the sky at different times of the day? Respond using JSON",
+    "format": "json",
+    "stream": false
+}'
+
+check the ollama documentaiton on github
+github.com/ollama/ollama/blob/main/docs/api.md
+
+Creating LLM Applications using Ollama
+
+There are different ways to interact with Ollama and its models
+1. CLI
+2. UI-based interfaces
+3. API
+4. Ollama Python Library
+
+msty.app - UI based interfaces
+
+use ollama models from 
+/Users/[username]/.ollama/models
+
+abhishek@ZoolX92DOS:~/Developer/Ollama AI Application$ python3 -m venv venv
+abhishek@ZoolX92DOS:~/Developer/Ollama AI Application$ source venv/bin/activate
+
+Building RAG Systems with Ollama
+We can build more complex LLM applications with Ollama
+
+RAG: Retreival Augmented Generation
+Converse with our own documents/data
+LLMs are limited - they dont know what they dont know
+RAG solves that problem, and the hallucination issue
+
+RAG Deep Dive
+docs -> parsing + preprocessing
+parsed docs -> Chunking
+chunks -> Embedding model -> Vectorization -> Indexing -> Vector store
+
+user -> query -> Embedding Model -> vectorize -> search -> Vector Store
+
+Vector Store -> retrieve -> Augment -> Prompt, relevant docs, query -> gen LLM -> generate response
+
+RAG systems need
+LLM (models)
+Document Corpus (Knowledge Base)
+Document Embeddings
+Vector Store (Vector Database, Faiss, Pinecone, Chromadb)
+Retreival mechanism
+
+Langchain
+A tool that makes it really easy to deal with LLMs and build robust LLM applications
+Used for 
+Loading and parsing documents
+Splitting documents
+Generating embeddings
+Provides a unified abstraction for working with LLMs and building Applications
+
+Langchain - Vectorstore & Embeddings
+Store documents into an easy and accessible format
+
+Vector Store Loading -> Document Loading {URLs, Db -> Documents} -> Splitting -> Storage
+
+{Retreival, question/query} -> Storage {Vector Store} -> Retrieval {Relevant Splits} -> Output {Prompt -> LLM} -> answer
+
+Splitting -> Embedding -> Storage
+
+Text with similar content and meaning will have similar vectors
+
+Searching - finding relevant results to the query string
+
+Recommendations - items with related text strings are recommended
+
+Classification - text strings are classified by most relevant and similar labels
+
+Documents -> text splits -> Embeddings -> Vector Databases {with original text splits}
+
+Vector Store - querying the Vectorstore
+query/question -> embed -> search and compare all entries in the vectorstore -> pick the most similar entry
+
+Vector Store - Processing with LLM
+Pick the most similar entry -> LLM {Take the most similar entry found and pass it on to the LLM along with the question/query} -> result/answer
+
+Go to ollama for embeddings
+use nomic-embed-text
+
+Swarm Framework to create AI agents
