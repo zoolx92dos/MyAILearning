@@ -1,1 +1,54 @@
+1. AI and data protection risk toolkit (https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ai-and-data-protection-risk-toolkit/) 
+and Guidance on AI and data protection (https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/)
 
+2. Model AI Governance Framework for Generative AI
+https://aiverifyfoundation.sg/resources/mgf-gen-ai/
+
+3. Adversarial Robustness Toolbox
+https://adversarial-robustness-toolbox.readthedocs.io/en/latest/
+
+4. Purple Llama CyberSecEval: A benchmark for evaluating the cybersecurity risks of large language models
+https://ai.meta.com/research/publications/purple-llama-cyberseceval-a-benchmark-for-evaluating-the-cybersecurity-risks-of-large-language-models/
+
+5. MITRE ATLAS 
+https://atlas.mitre.org/
+
+6. The CLeAR Documentation Framework for AI Transparency: Recommendations for Practitioners & Context for Policymakers
+https://shorensteincenter.org/clear-documentation-framework-ai-transparency-recommendations-practitioners-context-policymakers/
+
+7. Google's Model Card
+https://modelcards.withgoogle.com/about
+
+8. IBM AI FactSheets 360
+https://aifs360.res.ibm.com/
+
+9. HuggingFace AI Watermarking 101: Tools and Techniques
+https://huggingface.co/blog/watermarking
+
+10. [Paper] The Gradient of Generative AI Release: Methods and Considerations
+https://arxiv.org/abs/2302.04844
+
+11. Llama 2 Acceptable Use Policy 
+https://ai.meta.com/llama/use-policy/
+
+12. OpenAI's Usage policies
+https://openai.com/policies/usage-policies/
+
+13. Anthropic's Usage Policy
+https://www.anthropic.com/legal/aup
+
+14. Google's Generative AI Prohibited Use Policy
+https://policies.google.com/terms/generative-ai/use-policy
+
+15. Microsoft Responsible AI Impact Assessment Template
+https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-RAI-Impact-Assessment-Template.pdf
+
+16. Transform responsible AI from theory into practice
+https://aws.amazon.com/ai/responsible-ai/
+
+17. AWS Responsible Use of Machine Learning 
+https://d1.awsstatic.com/responsible-machine-learning/responsible-use-of-machine-learning-guide.pdf
+
+18. NSA AISC 
+Deploying AI Systems Securely (https://media.defense.gov/2024/Apr/15/2003439257/-1/-1/0/CSI-DEPLOYING-AI-SYSTEMS-SECURELY.PDF)
+Press Release (https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3741371/nsa-publishes-guidance-for-strengthening-ai-system-security/)
