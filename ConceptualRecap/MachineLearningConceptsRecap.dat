@@ -1,1 +1,144 @@
+ML Lifecycle 
+1. Problem Understanding
+2. Data Collectioin
+3. Data Preparation
+4. Model Selection
+5. Model Building
+6. Model Evaluation
+7. Model Tuning
+8. Deployment
+9. Monitoring
 
+Types of Learning: 
+1. Supervised Learning
+2. Unsupervised Learning
+3. Reinforcement Learning
+
+Supervised Learning
+1. I/P + O/P (labelled data)
+2. Question & Answer Type
+
+Unsupervised Learning
+1. Only I/P no output
+2. Only Question Type
+3. Unlabelled Data
+4. Look out for similarity
+
+Reinforcement Learning
+Reward penalty based learning
+Agent, Environment, Action, State, Reward
+
+Testing & Training Data
+Independent, Targer/Dependent
+x_train, y_train, y_predicted, y_test, error, MSE
+
+Overfitting & Underfitting
+Bias and Variance
+
+Confusion Matrix
+1. Accuracy
+2. Error
+3. Precision
+4. Recall
+Curse of Dimensionality
+5. F1 Score
+6. Specificity
+7. Sensitivity
+
+Uni, Bi, Multi - Variate Models
+
+Preprocessing
+1. Normalization [Min-Max Scaler]
+2. Standardization [Standard Scaler]
+3. Robust Scaler (Interquartile range - IQR)
+4. Label Encoding
+5. One hot encoding
+
+
+Machine Learning
+1. Supervised
+2. Unsupervised
+3. Reinforcement
+
+Supervised
+1. Classification
+  - Decision Tree
+  - Logistic Regression
+  - Naive Bayes
+  - SVM
+  - Random Forest
+  - KNN
+
+2. Regression
+  - Linear Regression
+  - Polynomial
+  - Ridge and Lasso
+  - Decision Tree
+  - Random Forest
+  - SVM Regression
+
+Unsupervised
+1. Clustering
+  - K-means
+  - Hierarchial
+  - DBSCAN
+
+Reinforcement
+1. Decision Making
+  - QLearning
+
+Regression
+1. Continuous Data
+2. Relationship between independent and dependent variables
+
+Linear Regression
+1. Simple 
+2. Multiple
+3. Polynomial Regression
+4. Ridge and Lasso Regression
+5. ElasticNet Regression (Hybrid)
+
+Decision Tree, SVM, KNN, Random Forest
+SVM Kernel Function (Linear, Polynomial, RBF)
+
+Unsupervised Learning
+1. KMeans
+2. Hierarchial Clustering (Agglomerative, Divisive)
+3. DBSCAN (Density Based Spatial Clustering of Applications with Noise)
+4. PCA (Principle Component Analysis) - Dimensionality Reduction Techniques
+
+Reinforcement Learning
+1. State
+2. Agent
+3. Reward
+4. Environment
+5. Action
+
+Elements of RL
+1. Policy - Defines agents behaviors for a given state time
+2. Reward Function - It provides a numerical score ased on state of environment
+3. Value Function - Value of state is total amount of reward an agent can expect to gain over the future starting from that particular state
+
+Q Learning
+1. Initialize Q-table
+2. Choose an action
+3. Perform action
+4. Measure Reward
+5. Update Q-table
+
+Ensemble Learning
+1. Bagging (Random Forest)
+2. Boosting (Ada Boost, Gradient Boosting)
+
+Types of Neural Network
+1. FFN  2. CNN  3. RNN  4. LSTM
+
+Genetic Algorithm
+1. Adaptive heuristic search algorithm inspired by DTCE (Genetics and Natural Selection)
+
+Terms 
+1. Population
+2. Chromosomes
+3. Allele
+4. Fitness Function
+5. Operator of GA (Selection, Crossover, Mutation)
