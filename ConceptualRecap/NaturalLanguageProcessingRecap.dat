@@ -1,1 +1,149 @@
+Basic Terms
+  - Words
+  - Sentence/Document
+  - Corpus
+  - Vocabulary
+  - Stopwords
+  - Tokens (Words/Sentence)
 
+Components of NLP (NLU, NLG, NL)
+
+NLU
+1. Lexical Ambiguity (word level)
+2. Syntactical Ambiguity (sentence level)
+3. Referential Ambiguity 
+
+NLG
+1. Text Planning
+2. Sentence Planning
+3. Text Realization
+
+Levels/Phases of NLP
+1. Lexical Analysis (lexicon/words)
+2. Syntactic Analysus (Relationship among words)
+3. Semantic Analysis (Meaningfulness)
+4. Disclosure Integration
+5. Pragmatic Analysis
+
+Text Processing
+1. Tokenization (Tokens)
+2. Stemming 
+3. Lemmatization
+4. POS Tagging
+5. Stopword Removal
+
+Applications
+1. Speech Recognition
+2. Sentiment Analysis
+3. Machine Translation
+4. Text Summarization
+5. Text Classification
+
+Challenges in NLP
+1. Language Difference
+2. Training Data
+3. Ambiguities
+4. Misspellings
+5. Multiple Intentions
+6. Uncertainity
+
+Language Syntax and Semantics
+1. Morphological Analysis
+  - Morphemes (Base + Affixes) - Prefix, Base/Root/Stem, Suffix
+  - Affixes (prefixes, suffixes, infixes)
+2. Inflection
+3. Derivation
+4. Compounding - Combination of multiple word stems
+5. Inflectional Morphology
+6. Derivational Morphology
+  - Deals with derivational morphemes
+  - use of prefix or suffix allowed
+  - change in class/category
+7. Finite State Morphological Parsing
+8. Stem Changes (regular and irregular words)
+
+Syntactic Analysis
+1. Syntax (Grammatical Structure)
+2. Analyzing NL with the rules of a given grammar
+3. Grammatical Rules applied on group of words
+
+Parser
+1. Used to implement parsing
+2. o/p is parse tree
+3. it reports syntax error
+
+Types of Parsing
+1. Top-down (start symbol -> input symbol) (expansion)
+2. Bottom-up (input symbol -> start symbol) (compression)
+
+Types of Derivation
+1. Left most
+2. Right most
+
+Passing Algorithm CYK (Cocke–Younger–Kasami) algorithm
+  - Grammaer: CFG
+  - Form: Chomsky Normal Form
+
+Semantic Analysis
+- Meaning of text
+1. Individual words (lexical semantics)
+2. Combination of words (compositional semantics)
+
+Elements of semantic analysis
+1. Hyponymy
+2. Homonymy
+3. Synonymy
+4. Antonymy
+5. Polysemy
+6. Meronoymy
+
+Tasks in Semantic Analysis
+1. WSD (Word Sense Disambiguation) - Interpreting the meaning of a word based upon the context in a text
+
+Relationship Extraction
+Entity -> Semantic Analysis -> NLP -> AI
+
+Basic Building block of semantic system
+1. Entity - A particular unit/individual
+2. Concept - Generalization of Entities
+3. Relations - Between entity and a concept
+4. Predicate - represents verb structure
+
+Approaches to meaning representation
+1. FOPL (First Order Predicate Logic)
+2. Quantifiers
+3. Semantic Nets (Graphical Depction of objects and their relationships)
+
+Language Modelling
+1. Determing the probability of a given sequence of words in a text/sentence based on previous words
+2. Develop probabilistic models that can predict the next word in sequence (N-gram language model)
+
+Conditional Probability Distribution
+P(next word | previous word)
+Unigram, Bigram, Trigram
+
+Bag of Words
+
+Word2vec
+
+BERT (Bidirectional Encoder Representations from Transformers)
+
+Topic Modelling - Discover topic/main idea (unsupervised)
+1. Latent Dirichlet Allocation (LDA)
+2. Latent Semantic Analysis
+3. SVD (Decomposing a matrix into a product of 3 matrices)
+4. Topic Encoded Data
+
+IR Models
+
+Named Entity Recognition
+
+Information Retreival
+1. Indexing
+  - Tokenization
+  - Stemming
+  - Techniques (Boolean Model, Vector Space Model)
+2. Matching
+  - Measure of similarity between two text
+
+Sentiment Analysis
