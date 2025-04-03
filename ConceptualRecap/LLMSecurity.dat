@@ -147,4 +147,96 @@ Kindervag’s fundamental principles of Zero Trust:
 2. Least privilege is the best privilege
 3. The all-seeing eye
 
-Start from Page 81
+Priniples of Zero trust for LLMs
+
+Strategies:
+1. Design considerations limiting the LLMs unsupervised agency
+2. Aggresive filtering of the LLMs output
+
+The architecture and design stage is the first line of defence against vulnerabilities. 
+
+Excessive Agency - Excessive agency exists when a developer gives an LLM-based system more capabilities or access than it safely should have.
+
+Principle of "least privilege"
+
+Aggresive output filtering - real-time content scanning, keyword filtering, machine learning algorithms trained to identify and flag risky content. 
+
+Brue force filtering
+
+Excessive Permissions
+
+How to break the problems - Where it started, Where it went wrong, What happened, How to fix it
+
+Excessive Functionality
+
+Common Risks - Toxic Outputs, PII Disclosure, Rogue Code Execution
+
+Handling Toxicity - Sentiment Analysis, Keyword Filtering, Using custom machine learning models
+
+Screening for PIIs
+
+Popular solutions for PII detection
+1. Regular Expressions
+2. Named Entity Recognition (NER)
+3. Dictionary-based matching
+4. Machine Learning Models
+5. Data masking and tokenization
+6. Contextual Analysis
+
+Preventing unforseen execution
+1. HTML encoding
+2. Safe contextual insertion
+3. Limit syntax and keywords
+4. Disable shell interpretable outputs
+5. Tokenization
+
+
+You can check the toxicity of the outputs using moderation API - A toxicity score between 0 and 1, where a higher score indicates a
+higher probability of the text being toxic.
+
+Linking your filters to LLM - Log interactions to and from LLM
+
+Sanitize for safety
+
+Attacks - Denial of Service (DoS), Denial of Wallet (Dow) and Model Cloning Attacks
+
+Denial of Wallet (DoW) Attack - Exploiting the pay-per-use models of cloud-based AI services. The adversary aims to cause the service provider to incur unsustainable costs by generating excessive queries or operations, leading to financial strain rather than mere service disruption.
+
+DoS Types - Volume-based Attacks, Protocol Attacks, Application Layer Attacks
+
+Model DoS Attacks Targeting LLMs - Scarce Respource Attacks, Context Window Exhaustion, Unpredictable User Input (Computationally Intensive Requests, Extensive Content Generation Requests, Complex Reasoning and Explaination Chains)
+
+DoW Attack - High Computational Costs; Scalability of usage; API-based access; Expensive, complex pricing models
+
+Mitigation Strategies - Domain-Specific Guardrails, Input Validation and Sanitization, Robust Rate Limiting, Resource Use Capping, Monitoring and Alerts, Financial Thresholds and Alerts
+
+Vulnerabilities in the Software Supply Chain
+
+Open Source Model Risk
+
+Training Data Poisoning
+
+Accidentally Unsafe Training Data
+
+Unsafe Plug-ins
+
+Model Cards - Model Description, Training Data, Intended Use, Ethical Considerations, Performance Metrics
+
+LLM Specific Security Testing Tools - TextAttack, Garak, Responsible AI Toolbox, Giskard LLM Scan
+
+Input Validation - Prompt Injection Prevention, Domain Limitation, Anonymization and Secret Detection
+
+Output Validation - Ethical Screening, Sensitive Information Protection, Code Output, Compliance Assurance, Fact-checking and Hallucination Detection
+
+Critical Functions of AI Red Team - Adverserial Attack Simulation, Vulnerability Assessment, Risk Analysis, Mitigation Strategy Development, Awareness and Training
+
+Leveraging RLHF for Alignment and Security
+
+RAISE - Responsible Artificial Intelligence Software Engineering
+Following includes six steps: 
+1. Limit your domain
+2. Balance your knowledge base
+3. Implement zero trust
+4. Manage your supply chain
+5. Build an AI red team
+6. Monitor continuously
