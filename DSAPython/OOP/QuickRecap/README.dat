@@ -1,0 +1,29 @@
+Topics Covered
+
+- Creating Classes and Objects
+- Attributes and Methods
+- Getter and Setter Methods
+- Properties
+- Static Attributes and Methods
+- Public protected and private access modifiers
+- Abstract Classes
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism
+
+- OOP Principles - 
+1. Inheritance vs composition, 
+2. coupling, 
+3. fragile base class problem, 
+4. dependency injection
+
+- SOLID Principles
+
+Design Patterns 
+1. State Pattern
+2. Adapter Pattern
+3. Observer Pattern
+4. Prototype Pattern
+5. Facade Pattern
+6. Abstract Factory Pattern
